@@ -6,8 +6,9 @@ RUN apt-get update
 
 # Download basic tools
 RUN \
-  apt-get install build-essential
-  apt-get install git
+  apt-get install -y build-essential
+  apt-get install -y git
+  apt-get install -y wget 
   
 # Install Java.
 RUN \
